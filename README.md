@@ -1,8 +1,34 @@
-OverviewThis Python script analyzes historical used-car data from Car Dekho to identify key factors influencing vehicle selling prices. It processes raw dataset parameters (such as original price, fuel type, transmission, and age) to uncover trends and outputs visualization charts for reporting and decision-making.  What the Code DoesData Loading & Preprocessing:
-Reads the CSV dataset into a Pandas DataFrame and creates a derived feature (Vehicle_Age) by calculating the difference between the current year and the manufacturing year.  Price Relationship Analysis:
-Generates a scatter plot comparing original showroom prices (Present_Price) against resale values (Selling_Price), categorized by fuel type and transmission.  Category-Based Price Distribution:
-Creates comparative box plots to evaluate how selling prices vary across different fuel types (Petrol, Diesel, CNG) and transmission models (Manual vs. Automatic).  Depreciation Trend Mapping:
-Plots a line graph charting price decay over time to analyze how vehicle age impacts market value.  Correlation Heatmap:
-Computes and visualizes a numerical correlation matrix showing the mathematical relationships between age, mileage, original price, and selling price.  Output Export:
-Automatically saves all generated plots as high-resolution PNG image files (1_selling_vs_present_price.png, 2_price_by_fuel_and_transmission.png, etc.) directly into your directory, making them ready to paste into your presentation slides.  How to RunEnsure Python 3.x is installed alongside required packages:Bashpip install pandas numpy matplotlib seaborn
-Place 1776311302-P3-Car Market Trends Analysis with Car Dekho Data.csv in the same directory as the script.  Run the script:Bashpython car_market_analysis.py
+# Car Market Analysis
+
+## Project Overview
+This Python script analyzes historical used-car market data from Car Dekho to identify key factors influencing vehicle resale prices. It cleans the raw data, performs feature engineering, and generates high-resolution data visualizations to help buyers, sellers, and dealers evaluate fair market value[cite: 1].
+
+---
+
+## What the Code Does
+
+* **Data Loading & Preprocessing:** Reads the dataset into a Pandas DataFrame and creates a new `Vehicle_Age` feature based on the manufacturing year[cite: 1].
+* **Price Relationship Analysis:** Generates a scatter plot comparing original showroom prices (`Present_Price`) against resale prices (`Selling_Price`), categorized by fuel type and transmission[cite: 1].
+* **Category Breakdown:** Creates box plots comparing selling price distributions across different fuel types (Petrol, Diesel, CNG) and transmission models (Manual vs. Automatic)[cite: 1].
+* **Depreciation Tracking:** Plots a line chart showing how selling prices decay as vehicle age increases[cite: 1].
+* **Correlation Mapping:** Builds a numerical heatmap highlighting relationships between vehicle age, mileage, original price, and selling price[cite: 1].
+* **Automated Image Export:** Saves all generated charts as high-resolution PNG image files directly to your folder for immediate use in presentation slides[cite: 1].
+
+---
+
+## Prerequisites & Installation
+
+Run the following command in your terminal or prompt to install the required libraries:
+
+```bash
+pip install pandas numpy matplotlib seaborn
+```
+##How to Run
+
+Ensure 1776311302-P3-Car Market Trends Analysis with Car Dekho Data.csv is in the same directory as your Python script
+
+Execute the script using:
+
+```bash
+python car_market_analysis.py
+```
